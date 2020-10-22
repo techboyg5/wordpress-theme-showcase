@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Twenty Fourteen WordPress Theme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: sans-serif;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            .preview-toolbar {
+                height: 56px;
+                background-color: black;
+                color: white;
+            }
+            .preview-toolbar-left {
+                float: left;
+                padding: 10px;
+            }
+            .preview-toolbar-right {
+                float: right;
+                padding: 10px;
+            }
+            .preview-iframe {
+                border: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: calc(100vh - 56px);
+            }
+            .get-the-theme {
+                background-color: blue;
+                color: white;
+                border: 1px solid white;
+                padding: 8px;
+                display: inline-block;
+            }
+            .get-the-theme:hover {
+                background: darkblue;
+            }
+            .all-themes-button {
+                background-color: black;
+                color: white;
+                border: 1px solid white;
+                padding: 8px;
+                display: inline-block;
+            }
+            .all-themes-button:hover {
+                background-color: gray;
+            }
+            .all-themes {
+                position: relative;
+                display: inline-block;
+            }
+            .all-themes-menu {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: black;
+                border: 1px solid white;
+                width: 200px;
+                padding: 10px 0;
+                z-index: 9999;
+                display: none;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            li a {
+                display: block;
+                color: white;
+                padding: 5px 10px;
+            }
+            li a:hover {
+                background-color: gray;
+            }
+            .active {
+                background-color: blue;
+            }
+            @media (max-width: 600px) {
+                .preview-toolbar {
+                    height: 112px;
+                }
+                .preview-iframe {
+                    height: calc(100vh - 112px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="preview-toolbar">
+                <div class="preview-toolbar-left">
+                    <div><strong>Twenty Fourteen</strong></div>
+                    <div>The 2014 WordPress Default Theme</div>
+                </div>
+                <div class="preview-toolbar-right">
+                    <a class="get-the-theme" href="#">Get Twenty Fourteen</a>
+                    <div class="all-themes">
+                        <a class="all-themes-button" href="#" onclick="showHideDropdown()">All Themes</a>
+                        <div class="all-themes-menu">
+                            <ul>
+                                <li><a href="twentyten.html">Twenty Ten</a></li>
+                                <li><a href="twentyeleven.html">Twenty Eleven</a></li>
+                                <li><a href="twentytwelve.html">Twenty Twelve</a></li>
+                                <li><a href="twentythirteen.html">Twenty Thirteen</a></li>
+                                <li><a class="active" href="twentyfourteen.html">Twenty Fourteen</a></li>
+                                <li><a href="twentyfifteen.html">Twenty Fifteen</a></li>
+                                <li><a href="twentysixteen.html">Twenty Sixteen</a></li>
+                                <li><a href="twentyseventeen.html">Twenty Seventeen</a></li>
+                                <li><a href="twentynineteen.html">Twenty Nineteen</a></li>
+                                <li><a href="twentytwenty.html">Twenty Twenty</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe class="preview-iframe" src="https://techboyg5blog.com/twenty-fourteen-demo-dhdlbnr5lwzvdxj0zwvulwrlbw8/"></iframe>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script>
+            function showHideDropdown() {
+                $('.all-themes-menu').slideToggle(400);
+            }
+        </script>
+    </body>
+</html>
